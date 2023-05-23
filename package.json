@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpx directus start",
+    "build": "pnpx directus bootstrap",
+    "create-snapshot": "pnpx directus schema snapshot --yes snapshot.yaml",
+    "apply-snapshot": "pnpx directus schema apply --yes snapshot.yaml"
+  },
+  "dependencies": {
+    "directus": "^10.1.1",
+    "mysql": "^2.18.1",
+    "pg": "^8.11.0"
+  }
+}
